@@ -10,7 +10,17 @@ body {
   box-sizing: border-box;
 }
 
+
+
+
 /* general */
+
+
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+  }
 
 .container {
   width: 100%;
@@ -245,29 +255,59 @@ input[type=submit] {
 
 /*MEDIA QUERIES*/
 
-@media monitor and (max-width: 980px;){
-footer {
-  background: black;
-  color: red;
-}
 
-}
+
  
- @media screen and (max-width: 768px){
-textarea {
-  background: red;
-  color: blue;
-  } 
-}
-
-@media tablet and (max-width: 640px;){
-h2 {
-  background: purple;
-  font-style: bold;
-}
-}
+ 
+  
 
 
+@media screen and (max-width: 980px){
+
+
+
+.work {
+  clear: both;
+  margin-left: 130px;
+}
+
+.social {
+  clear: both;
+}
+}
+
+@media only screen and (max-width: 768px){
+.mastheadclass {
+  position: static;
+}
+
+.work {
+  clear: none;
+   margin-left: 0px;
+   float: left;
+}
+
+.sidebar {
+
+  clear: both;
+  float: left;
+
+}
+
+
+}
+  
+
+@media only screen and (max-width: 640px){
+.mastheadclass {
+  position: static;
+}
+
+.main-section p {
+  clear: both;
+}
+
+ } 
 
 
 /* Linking to Bootstrap
